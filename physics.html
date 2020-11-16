@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Physics Simulator App</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script type='text/javascript' src=scripts/physicsProjectileApp2.js>
+        </script>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+     </head>
+    <body onload="initialize()">
+        <div data-role="page">
+            <div data-role="content">
+                <label>Angle: </label>
+                <input type="number" name="angle" id="angle" min="0" man="90"
+                placeholder="In degrees">
+                <label>Velocity: </label>
+                <input type="number" name= "velocity" id="velocity" min="0" max="299792458"
+                placeholder="In metres/second">
+                <br>
+                <button onclick="update();">
+                    Calculate
+                </button>
+                <br>
+                <table id="data" >
+                    <tr>
+                        <td>Max Height: </td>
+                        <td id='height'>0</td>
+                        <td>metres</td>
+                    </tr>
+                    <tr>
+                        <td>Distance Traveled: </td>
+                        <td id="distance">0</td>
+                        <td>metres</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+    </body>
+</html>
